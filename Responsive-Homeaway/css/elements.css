@@ -1,0 +1,67 @@
+body{
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: bolder;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 35px;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h4{
+    font-size: 22px;
+    line-height: 24px;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h6{
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+span{
+    font-size: 15px;
+    line-height: 18px;
+}
+
+a{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+

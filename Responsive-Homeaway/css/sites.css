@@ -1,0 +1,556 @@
+.container-wrapper{
+    background: url("../images/hero4w.jpg") no-repeat;
+}
+
+.navbar-inverse {
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    max-height: 20px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.btn-group {
+    margin-top: 8px;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    left: -30px;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-default:hover, .btn-default:active:hover,
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    padding: 15px 8px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.birdhouse {
+    float: right;
+    position: absolute;
+    top: -43px;
+    width: 45px;
+    height: 40px;     
+}
+
+.icon-house{
+    float: right; 
+    position: relative;
+    top: -44px;  
+}
+        
+.icon-before-house {
+    background: url("../images/download.svg") no-repeat;
+    height: 36px;
+    width: 41px;
+    float: right;
+}   
+        
+.house-popup {
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 7px;
+    max-width: 330px;
+    height: 260px;
+    padding: 10px 15px;
+    position: relative;
+    top: 70px;
+    display: none;
+}
+
+.house-popup p {
+    font-size: 12px;
+    font-weight: 22px;
+
+}
+
+.content-popup {
+    position: absolute;
+    border: 1px solid transparent;
+    max-width: 70px;
+    height: 200px;          
+    right: -8px;
+    top: -76px;
+    color: #fff;
+    font-size: 11px;   
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.logo-popup {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;            
+}
+
+.icon-house:hover .house-popup{
+    display: block;
+    cursor: pointer;
+}
+
+.icon-house:hover .icon-before-house:before{
+    position: absolute;         
+    transition: width 10s ease-in;      
+}
+
+.icon-house:hover .icon-before-house{
+    background: transparent;
+}
+
+
+
+.top-minimenu {
+    float: right;
+    display: none;
+}
+
+
+
+
+
+/*------------------------------------------------Constrain----------------------------------------------*/
+
+.constrain{
+    max-width: inherit;
+}
+
+.jumbotron{   
+    background-color: transparent;
+}
+
+.jumbotron h1{
+    color: #fff;
+    font-size: 57px;
+    line-height: 66px;
+    text-align: center;
+    margin-top: 160px;
+    max-width: inherit;
+}
+
+.a-form{
+    padding: 12px 4px 12px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    display: inline-block;
+    width: 100%;
+}
+.search{
+    max-width: 1200px;
+    margin: 60px auto 10px;
+}
+
+.btn-lg {
+    text-align: left;
+}
+
+.tclick {
+    height: 46px;
+}
+
+.form-control {
+    height: 46px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 4.5px 1.25rem;
+}
+
+.dropdown-search {
+    color: #808080;
+}
+
+.menuitem{
+    text-align: center;
+    left: 0px;
+}
+
+.width-limit{
+    background-color: #ffffff;
+    display: inline-block;
+    width: 100%;
+}
+
+.width-limit h3{
+    text-align: center;
+    color: #398fd1;
+}
+
+.width-limit ul.list-unstyled { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.display-img {
+    margin-top: 40px;
+}
+
+.col-sm-4{
+    padding: 0 12px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.col-sm-4 h3{
+    color: #434343;
+    text-align: center;
+    position: static;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.col-sm-4 p{
+    text-align: center;
+    padding: 0 ;
+    position: static;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.row .width-limit h3{
+    text-align: center;
+}
+
+.width-limit h2{
+    text-align: center;
+    color: #398fd1;
+    margin: 0px;
+}
+
+.thumbnail{
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+}
+
+.thumbnail p{
+    text-align: center;
+    margin: -150px auto 0;
+    color: #fff;
+}
+
+.clearfix-both{
+    clear: both;
+}
+
+.promo{
+    background: url("../images/room-office.jpg") no-repeat;
+    width: 380px;
+    height: 264px;
+    background-size: 100%;
+    cursor: pointer;
+    border-radius:6px;
+    margin: 0 10px;
+}
+
+.guests{
+    background: url("../images/guests.jpg");
+    width: 380px;
+    height: 264px;
+    background-size: 100%;
+    cursor: pointer;
+    border-radius:6px;
+    margin: 0 10px;
+}
+
+.mobile{
+    background: url("../images/mobile.png");
+    width: 380px;
+    height: 264px;
+    cursor: pointer;
+    border-radius:6px;
+    margin: 0 10px;
+}
+
+.absolute-promo {
+    position: absolute;
+    text-align: left;
+    color: #fff;
+}
+.relative-promo{
+    position: relative;
+    width: auto;
+    left: 100px;
+    top: 230px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.relative-promo-mobile{
+    position: relative;
+    width: auto;
+    top: 230px;
+    left: -110px;
+}
+
+.relative-promo-mobile a{
+    font-size: 18px;
+}
+
+.col-sm-4 .promo h4 {
+    text-align: left;
+}
+
+
+.review{
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.myCarousel{
+    width: 300px;
+}
+
+.define-carousel{
+    height: 300px;
+}
+
+/*------------------------------------------------Footer----------------------------------------------*/
+.footer{
+    position: relative;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    border-top: 2px solid #2a6ebe;
+}
+
+.link{
+    display: block;
+}
+
+.destinations{
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 10px 12px 0;
+    text-align: left;
+}
+
+.notitle-destinations {
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 10px 12px 0;
+    text-align: left;
+}
+
+.company {
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 10px 12px 0;
+    text-align: left;
+}
+
+.learn-more {
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 10px 12px 0;
+    text-align: left;
+}
+
+.follow-us {
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 10px 12px 0;
+    text-align: left;
+}
+
+.payments {
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 10px 12px 0;
+    text-align: left;
+}
+
+.notitle-destinations h6{
+    color: transparent;
+    cursor: auto;
+}
+
+.change-location{
+    margin-left: 30px;
+}
+
+.legal{
+    background: #1c1c1c;
+    padding: 4px 8px;
+    color: #888;
+}
+
+.legal ul{
+    display: inline-block;
+    padding: inherit;
+
+}
+
+.legal li{
+    display: inline-block;
+    padding: 5px;
+    margin-le: 0px 5px;
+}
+
+.legal li a{
+    background: #1c1c1c;
+    color: #888;
+}
+
+.pages{
+    margin-left: 30px;
+}
+
+.copyright{
+    float: right;
+    margin-right: 30px;
+}
+
+.fa-square:before{
+    content: "\f0c8";
+    font-size: 5px;
+    padding: 10px 0;
+}
+
+.change-location{
+    display: inline-block;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.payment-visa{
+    background: url("../images/payment-visa.png") no-repeat;
+    width: 59px;
+    height: 36px;
+}
+
+.payment-mastercard{
+    background: url("../images/payment-mastercard.png") no-repeat;
+    width: 59px;
+    height: 36px;
+}
+
+.payment-amex{
+    background: url("../images/payment-amex.png") no-repeat;
+    width: 59px;
+    height: 36px;
+}
+
+.payment-jcb{
+    background: url("../images/payment-jcb.png") no-repeat;
+    width: 59px;
+    height: 36px;
+}
+
+.payment-paypal{
+    background: url("../images/payment-paypal.png") no-repeat;
+    width: 59px;
+    height: 36px;
+}
+
+@media screen and (max-width: 991px) {
+    .form-control {
+        margin-top: 10px;
+    }    
+
+    .tclick {
+        margin-top: 10px;
+    }
+
+    .col-sm-4 h3 {
+        
+    }
+
+    .col-sm-4{
+        padding: 0 12px;
+        margin-top: 42px;
+        margin-bottom: 42px;
+    }
+
+    .col-sm-4 h3{
+        font-size: 22px;
+        line-height: 26px;
+        position: static;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .col-sm-4 p{
+        text-align: center;
+        padding: 0 ;
+        position: static;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+
+    
+}
+
+@media screen and (max-width: 767px) {
+    .top-minimenu {
+        float: right;
+        display: block;
+        position: relative;
+        right: 80px;
+    }
+
+    .birdhouse {    
+        top: -38px;
+     }
+
+    .icon-house {
+        right: -4px;
+        top: -36px;
+    }
+
+    .jumbotron h1{
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .a-form {
+        background-color: transparent;
+    }
+
+    .col-sm-4 h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+}
+

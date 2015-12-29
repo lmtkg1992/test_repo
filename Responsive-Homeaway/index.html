@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scalet=1">
+        <title>HomeAway</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/elements.css">
+        <link rel="stylesheet" href="css/sites.css">
+        <link rel="stylesheet" href="">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="container-wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                   <a class="logo-homeaway" href="javascript: void();"><img alt="Homeaway" height="40" src="images/logo-white-ha.svg"></a>
+                   <div class="top-minimenu">
+                       <div class="btn-group">
+                       <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                <i class="fa fa-globe"></i> <i class="fa fa-angle-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Bahasa Indonesia</a></li>
+                                <li><a href="#">Tiếng Việt</a></li>
+                                <li><a href="#">Bahasa Melayu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                       <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                <i class="fa fa-usd"></i> <i class="fa fa-angle-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><b>ARS</b> - Peso Argentina</a></li>
+                                <li><a href="#"><b>IDR</b> - Rupiah Indonesia</a></li>
+                                <li><a href="#"><b>USD</b> - Dola Mỹ</a></li>
+                                <li><a href="#"><b>VND</b> - Việt Nam Đồng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                   </div>
+                                      
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="btn-group">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i> Language <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Bahasa Indonesia</a></li>
+                                    <li><a href="#">Tiếng Việt</a></li>
+                                    <li><a href="#">Bahasa Melayu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="btn-group">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <i class="fa fa-usd"></i> Currency <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><b>ARS</b> - Peso Argentina</a></li>
+                                    <li><a href="#"><b>IDR</b> - Rupiah Indonesia</a></li>
+                                    <li><a href="#"><b>USD</b> - Dola Mỹ</a></li>
+                                    <li><a href="#"><b>VND</b> - Việt Nam Đồng</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void();">Đăng ký</a></li>
+                        <li><a href="javascript:void();">Đăng nhập</a></li>
+                        <li class="rent"><a href="javascript:void();">Đăng tin cho thuê</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="icon-house">
+                    <p  class="icon-before-house"></p>
+                    <div class="house-popup">
+                        <div class="content-popup">Các thương hiệu của chúng tôi</div>
+                        <p>HomeAway.com.vn là thành viên của gia đình HomeAway, thương hiệu hàng đầu thế giới về nơi ở nghỉ dưỡng với hơn 1 triệu bài đăng. Chúng tôi cung cấp nhiều lựa chọn chỗ ở nhất cho bất kỳ kỳ nghỉ du lịch nào của bạn. Cam kết của chúng tôi là giúp cho mọi gia đình và nhóm du lịch tìm thấy nơi nghỉ dưỡng hoàn hảo để cùng nhau tạo những trải nghiệm khó quên.</p>
+                        <div class="logo-popup"><img src="images/logo-popup.png" class="img-rounded" width="121" height="34"></div>
+                    </div>     
+                </div>
+            </div>
+        </nav>
+        
+        <!--  Constrain -->
+        <div class="constrain">
+            <div class="jumbotron">
+                <h1>Khám phá nơi ở du lịch tốt nhất</h1>
+                <div class="search">
+                    <form  accept-charset="UTF-8" action="/search" method="get" class="a-form">
+                        <div class="col-sm-12 col-md-4">
+                            <div>
+                                <input name="location" class="form-control" type="text" placeholder="Điểm đến của bạn?">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2">
+                            <div>
+                                <input name="search-checkin" class="form-control" type="text" placeholder="Nhận phòng">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2">
+                            <div>
+                                <input name="search-checkout" class="form-control" type="text" placeholder="Trả phòng">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2">
+                            <div class="dropdown">
+                                <button class="btn-lg dropdown-toggle form-control" type="button" data-toggle="dropdown"><span class="dropdown-search"><i class="fa fa-users"></i>&nbsp;Khách&nbsp;<i class="fa fa-angle-down"></i></span></button>
+                                <ul class="dropdown-menu menuitem" role="menu" aria-labelledby="search-guests">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-value="1">1</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-value="2">2</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-value="3">3</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-value="4">4</a></li>
+                                </ul>
+                                <div class="dropdown-menu-chevron"></div>
+                                <input type="hidden" name="people">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2">
+                            <button class="btn btn-primary btn-block tclick">Tìm kiếm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="width-limit">
+                <ul class="list-unstyled">
+                    <li class="col-sm-4">
+                        <h3>Tìm kiếm và Khám phá</h3>
+                        <p>Tìm chỗ ở phù hợp với ngân sách và phong cách của bạn.</p>
+                        <div class="display-img">
+                            <div>
+                                <img id="building1" src="http://static3.homeaway.com.vn/assets/pages/home/step-building1-ha-3d62dea81934d756ff8d7100a9ff9a94.svg" />
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <h3>Liên lạc và Đặt chỗ</h3>
+                        <p>Liên lạc với các chủ nhà tiềm năng, xác nhận ngày du lịch và đặt phòng an toàn.</p>
+                        <div class="display-img">
+                            <img src="http://static2.homeaway.com.vn/assets/pages/home/step-mobile-cd6525f64b51fc5e7a7831b9a370592c.svg" height="182px"/>
+                            <div class="screen"></div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <h3>Du lịch và Tận hưởng!</h3>
+                        <p>Sống như người địa phương ở bất kỳ nơi nào trên thế giới.</p>
+                        <div class="display-img">
+                            <img src="http://static1.homeaway.com.vn/assets/pages/home/step-window-542b3362a6dbf970a36db7ee61648c4b.svg" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="width-limit">
+                <h2>Điểm đến phổ biến</h2>
+                <ul  class="list-unstyled">
+                    <li class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="images/singapore.jpg" alt="Singapore" width="380" height="264">
+                            <p><strong>Singapore</strong></p>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="images/hong-kong.jpg" alt="Hồng Kông" width="380" height="264">
+                            <p><strong>Hồng Kông</strong></p>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="images/sydney.jpg" alt="Sydney" width="380" height="264">
+                            <p><strong>Sydney</strong></p>
+                        </div>
+                    </li>
+                    <li class="col-xs-6">
+                        <div class="thumbnail">
+                            <img src="images/tokyo.jpg" alt="Tokyo" width="580" height="264">
+                            <p><strong>Tokyo</strong></p>
+                        </div>
+                    </li>
+                    <li class="col-xs-6">
+                        <div class="thumbnail">
+                            <img src="images/taipei.jpg" alt="Taipei" width="580" height="264">
+                            <p><strong>Đài Bắc</strong></p>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="images/phuket.jpg" alt="Phuket" width="380" height="264">
+                            <p><strong>Phuket</strong></p>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="images/bali.jpg" alt="Bali" width="380" height="264">
+                            <p><strong>Bali</strong></p>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="images/seoul.jpg" alt="Seoul" width="380" height="264">
+                            <p><strong>Seoul</strong></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="width-limit">
+                <ul class="list-unstyled">
+                    <li class="col-sm-4">
+                        <i><img src="http://static3.homeaway.com.vn/assets/pages/home/advantage-value-ha-99a28a4e2adaf0c6a9082de45200890d.svg" /></i>
+                        <br>
+                        <h5>Tiện nghi &amp; Tiết kiệm hơn</h5>
+                        <span>Nghỉ tại nhà ở địa phương thay vì một khách sạn đắt tiền.</span>
+                    </li>
+                    <li class="col-sm-4">
+                        <i><img src="http://static3.homeaway.com.vn/assets/pages/home/advantage-space-ha-25438193fd852e1c7cbe1c560e06132f.svg" /></i>
+                        <br>
+                        <h5>Tận hưởng nhiều không gian hơn</h5>
+                        <span>Với chi phí tương đương một phòng khách sạn, bạn có thể thuê toàn bộ căn nhà, đồng nghĩa với việc có thêm nhiều không gian và tiện nghi cho kỳ nghỉ của mình.</span>
+                    </li>
+                    <li class="col-sm-4">
+                        <i><img src="http://static3.homeaway.com.vn/assets/pages/home/advantage-local-ha-42819ad5da14764eb1418b79fb607b37.svg" /></i>
+                        <br>
+                        <h5>Trải nghiệm như một người bản xứ</h5>
+                        <span>Trải nghiệm cuộc sống bản địa để có một chuyến du lịch đầy màu sắc, chân thực và khó quên.</span>
+                    </li>
+                    <li class="col-sm-4 clearfix-both">
+                        <i><img src="http://static3.homeaway.com.vn/assets/pages/home/advantage-secure-ha-83673c1ece828fef091a2879779aa0bf.svg" /></i>
+                        <br>
+                        <h5>An toàn tuyệt đối</h5>
+                        <span>Với một hệ thống chi trả trực tuyến an toàn, chúng tôi sẽ giúp bạn đảm trách việc thanh toán. Bạn có thể thực hiện giao dịch bằng thẻ tín dụng hoặc thông qua PayPal.</span>
+                    </li>
+                    <li class="col-sm-4">
+                        <i><img src="http://static3.homeaway.com.vn/assets/pages/home/advantage-home-ha-fb1fbcbd52e7a431f33729afdf04c179.svg" /></i>
+                        <br>
+                        <h5>Như đang ở nhà</h5>
+                        <span>Sinh hoạt thoải mái như thể bạn đang ở nhà. Chuẩn bị bữa sáng trong nhà bếp của riêng mình, sử dụng tiện nghi giặt ủi hay Wi-Fi mà không phải trả thêm bất kỳ chi phí nào.</span>
+                    </li>
+                    <li class="col-sm-4">
+                        <i><img src="http://static3.homeaway.com.vn/assets/pages/home/advantage-choice-ha-3b837473b6c7719acd7c2cd33ef381b7.svg" /></i>
+                        <br>
+                        <h5>Nhiều lựa chọn</h5>
+                        <span>Từ phòng riêng, căn hộ, biệt thự biệt lập cho đến những căn nhà truyền thống, chúng tôi không ngừng mở rộng danh sách bài đăng của mình.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="width-limit">
+                <ul class="list-unstyled">
+                    <li class="col-sm-4 promo">
+                        <div class="absolute-promo">
+                            <h4>Chủ nhà</h4>
+                            <p style="text-align: left;">Đăng tin và nhận thêm thu nhập từ việc cho thuê phòng.</p>
+                        </div>
+                        <div class="relative-promo">Tìm hiểu thêm</div>
+                    </li>
+                    <li class="col-sm-4 guests">
+                        <div class="absolute-promo">
+                            <h4>Du khách</h4>
+                            <p>Đọc nhận xét từ các khách du lịch trước.</p>
+                        </div>
+                        <div class="relative-promo">Tìm hiểu thêm</div>
+                    </li>
+                    <li class="col-sm-4 mobile">
+                        <div class="relative-promo-mobile"><a><b>Tìm hiểu thêm</b></a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="width-limit">
+                <p style="text-align: center;"><b>Được giới thiệu trên</b></p>
+                <ul class="list-unstyled">
+                    <li class="col-sm-4"><img alt="BBC" src="http://static1.homeaway.com.vn/assets/pages/home/featured-bbc-5c9c5da0858aad74fc8ae564eef69d01.png" width="151"></li>
+                    <li class="col-sm-4"><img alt="Cosmopolitan" src="http://static2.homeaway.com.vn/assets/pages/home/featured-cosmo-cfed04ea8f61d2522abf97682a7c3944.png" width="212"></li>
+                    <li class="col-sm-4"><img alt="TechCrunch" src="http://static1.homeaway.com.vn/assets/pages/home/featured-techcrunch-9ef2242884af1c9fea49d687b6e052c3.png" width="256"></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="link">
+                <div class="destinations">
+                    <h6>Điểm đến nổi bật</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void();" class="block">Bali</a></li>
+                        <li><a href="javascript:void();" class="block">Băng Cốc</a></li>
+                        <li><a href="javascript:void();" class="block">Đài Bắc</a></li>
+                        <li><a href="javascript:void();" class="block">Hồng Kông</a></li>
+                        <li><a href="javascript:void();" class="block">Kuala Lumpur</a></li>
+                    </ul>
+                </div>
+                <div class="notitle-destinations">
+                    <h6>.</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void();" class="block">Phuket</a></li>
+                        <li><a href="javascript:void();" class="block">Seoul</a></li>
+                        <li><a href="javascript:void();" class="block">Singapore</a></li>
+                        <li><a href="javascript:void();" class="block">Sydney</a></li>
+                        <li><a href="javascript:void();" class="block">Tokyo </a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <h6>Thông tin công ty</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void();" class="block">Về chúng tôi</a></li>
+                        <li><a href="javascript:void();" class="block">Báo Chí</a></li>
+                        <li><a href="javascript:void();" class="block">Nghề nghiệp</a></li>
+                        <li><a href="javascript:void();" class="block" target="_blank">Liên hệ</a></li>
+                        <li><a href="javascript:void();" class="block">Blog</a></li>
+                        <li><a href="javascript:void();" class="block">Tin đồ họa</a></li>
+                    </ul>
+                </div>
+                <div class="learn-more">
+                    <h6>Tìm hiểu thêm</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void();" class="block" target="_blank">Về trang web</a></li>
+                        <li><a href="javascript:void();" class="block" target="_blank">Trợ giúp</a></li>
+                        <li><a href="javascript:void();" class="block" target="_blank">Thông tin cần biết</a></li>
+                        <li><a href="javascript:void();" class="block">Trở thành chủ nhà</a></li>
+                        <li><a href="javascript:void();" class="block">Những trải nhiệm</a></li>
+                        <li><a href="javascript:void();" class="block">Thiết bị di động</a></li>
+                        <li><a href="javascript:void();">Sự kiện</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <h6>Theo dõi trên</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void();" target="_blank" class="tclick" data-tkey="Facebook" data-tloc="Bottom Nav">Facebook</a></li>
+                        <li><a href="javascript:void();" target="_blank" class="tclick" data-tkey="Twitter" data-tloc="Bottom Nav">Twitter</a></li>
+                        <li><a href="javascript:void();" target="_blank" class="tclick" data-tkey="Plus" data-tloc="Bottom Nav">Google+</a></li>
+                    </ul>
+                </div>
+                <div class="destinations">
+                    <h6>Thanh toán Bảo mật</h6>
+                    <ul class="list-inline">
+                        <li class="payment-visa"></li>
+                        <li class="payment-mastercard"></li>
+                        <li class="payment-amex"></li>
+                        <li class="payment-jcb"></li>
+                        <li class="payment-paypal"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix-both"></div>
+                <div class="constrain change-location">
+                    <div class="flag"><img src="http://static2.homeaway.com.vn/assets/flags/vn-a0f917c85b9564e290264bf3e3cb4200.png" width="32" /> <span>Việt Nam</span></div>
+                </div>
+                <div class="legal">
+                    <ul class="pages list-inline">
+                        <li><a href="javascript:void();">Điều kiện và điều khoản</a></li>
+                        <li><i class="fa fa-square"></i></li>
+                        <li><a href="javascript:void();">Chính sách bảo mật</a></li>
+                    </ul>
+                    <ul class="copyright list-inline">
+                        <li>&copy; 2015 HomeAway</li>
+                        <li><i class="fa fa-square"></i></li>
+                        <li>Made in Singapore</li>
+                    </ul>
+                </div>
+            </div>
+        </footer> 
+        </div>             
+    </body>
+</html>
+
+
+
